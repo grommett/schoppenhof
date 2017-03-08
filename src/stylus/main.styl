@@ -1,0 +1,52 @@
+@import 'vars'
+@import '_header'
+@import '_menu'
+@import '_nav'
+@import '_location-times'
+@import '_grid'
+
+body
+  font-family: font-family
+  margin: 0
+  padding: 0
+  color: primary
+img 
+  display: block
+
+section
+  max-width: 900px
+  
+.h2-decoration
+  position: relative
+  height: 45px
+  margin: 40px 0
+  h2
+    position: absolute
+    transform: translateX(-50%)
+    left: 50%
+    top: 0
+    font-size: 30px
+    margin: 0
+    font-family: sans-serif
+    white-space: nowrap
+    
+    &:after
+      content: ""
+      display: block
+      height: 8px
+      background-color: primary
+
+a 
+  text-decoration: none
+  color: primary
+  transition: color .2s ease-out
+  &:hover
+    color: secondary
+    border-bottom: 2px solid
+
+br.mobile-lr
+  display: none
+
+@media screen and (max-width: break-point)
+  br.mobile-lr
+    display: initial

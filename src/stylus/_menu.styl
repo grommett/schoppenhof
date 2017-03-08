@@ -1,0 +1,122 @@
+.menu-container
+  background-size: 60%
+  background-repeat: no-repeat
+  background-position: 50%
+  max-width: 900px
+  margin: 0 auto
+  sup 
+    font-size: 11px
+  ul 
+    margin: 0 0 13px
+    font-size: 14pt
+    padding: 0
+
+    li 
+      position: relative
+      list-style: none
+      margin-bottom: 5px
+      &.extra-margin-bottom
+        margin-bottom: 15px
+
+.menu-container_apple
+  background-image: url(/assets/menu-apple.png)
+
+.menu-container_wreath
+  background-image: url(/assets/menu-wreath.png)
+      
+.menu-category, 
+.menu-category_small
+  margin: 0 0 10px
+  font-size: 14pt
+  text-transform: uppercase
+  font-family: 'Beaulieu W01 Medium'
+
+.menu-category_small
+  font-size: 10pt
+
+.menu-category_extra-margin
+  margin: 45px 0 30px 0
+
+.menu-category_extra-margin
+  &:first-child
+    margin-top: 0
+
+.menu-item-name, 
+.menu-item-name_inline
+  display: block
+  font-size: 12pt
+  font-weight: bold
+
+.menu-item-name_inline
+  display: initial
+
+.menu-item-name_small
+  font-size: 10pt
+
+.menu-item-brand 
+  display: block
+  font-size: 9pt
+
+.menu-item-desc, 
+.menu-item-desc_inline, 
+.menu-item-desc_large-font
+  display: block
+  font-size: 9pt
+  font-style: italic
+
+.menu-item-desc_inline
+  display: inline
+
+.menu-item-desc_large-font
+  font-size: 11.5pt
+.menu-price-desc-container
+  position: relative
+.menu-item-food-desc
+  font-size: 11.5pt
+
+.menu-item-price-list
+  position: absolute
+  top: 0
+  right: 0
+  font-size: 12pt
+.price-align-bottom
+  position: relative
+.menu-key
+  margin: 20px
+  width: 100%
+  padding: 0
+  text-align: center
+  li 
+    list-style-type: none
+    display: inline-block
+    font-size: 10px
+    margin-left: 20px
+    &:first-child
+      margin-left: 0
+    
+.quantity
+  margin-left: 25px
+  &:first-child 
+    margin-left: 0
+
+.price
+  font-weight: bold
+  font-family: 'Beaulieu W01 Medium'
+  margin-left: 10px
+
+@media screen and (max-width: break-point)
+  .price 
+    margin-left: 2px
+  .quantity
+    margin-left: 10px
+  .menu-item-price-list
+    font-size: 10pt
+  .menu-price-desc-container
+    position: relative
+  .menu-container ul li
+    line-height: 14px
+    margin-bottom: 15px
+    &:last-child
+      margin-bottom: 0
+  .price-align-bottom
+    position: initial
