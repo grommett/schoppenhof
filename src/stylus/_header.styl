@@ -1,23 +1,65 @@
 header 
-  background-color: primary
   position: relative
-
-  #logo 
-    position: absolute
-    left: 50%
-    top: 50%
-    transform: translate(-50%, -50%)
-    width: calc(50% - 40px)
-    max-width: 400px
-    
-  #header-img  
-    width: 100% 
-    max-width: 2048px
-    
-#header-contact
-  padding: 20px
+  padding-top: 42%
+  background-image: url(/assets/header-2.jpg)
+  background-repeat: no-repeat
+  background-size: 100%
+  background-position: 50% 0
   background-color: primary
-  color: #E1CC8A
-  text-align: center
-  font-size: 15px
-      
+  background-attachment: fixed
+  width: 100%
+
+  #header-logo-social-icons
+    position: absolute
+    // top: 59.5%
+    top: 58.5%
+    left: 50%
+    // width: 33%
+    width: 28%
+    transform: translate(-50%, -50%)
+    max-width: 400px
+    text-align: center
+
+    #logo
+      max-width: 400px
+      width: 100%
+    a 
+      display: inline-block
+      padding: 10px
+      width: 30px
+      box-sizing: border-box
+
+      &:hover
+        border-bottom: none
+      img
+        display: inherit
+        max-height: 20px
+
+  #hours-location
+    position: absolute
+    color: #fff
+    top: 20px
+    margin: 0
+    padding: 0
+    list-style-type: none
+    left: 50%
+    transform: translateX(-50%)
+    white-space: nowrap
+
+    li 
+      display: inline-block
+      margin-left: 20px
+      &:first-child
+        margin-left: 0
+
+@media screen and (max-width: break-point)
+  header 
+    #header-logo-social-icons
+      width: 43%
+      a 
+        display: none
+    #hours-location
+      display: none
+    #header-logo-social-icons
+      top: 50%
+      width: 33%
