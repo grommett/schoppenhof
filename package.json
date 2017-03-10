@@ -7,7 +7,7 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "serve": "http-server ./build -o -c-1 -s -a localhost",
         "assets": "mkdir -p ./build && cp -r ./src/assets ./build",
-        "build": "mkdir -p ./build && npm run css && npm run pug && npm run assets && cp ./src/favicon.ico ./build/favicon.ico",
+        "build": "mkdir -p ./build && npm run css && npm run pug && npm run assets",
         "css": "mkdir -p ./build/css && stylus ./src/stylus/main.styl -o ./build/css",
         "clean:build": "rm -rf ./build",
         "pug": "find ./src -type f -name \"[^_]*.pug\" -exec node build-helper.js {} \\;",
