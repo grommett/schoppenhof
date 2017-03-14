@@ -1,9 +1,8 @@
 html(lang="de-DE")
   head
-    meta(charset="UTF-8")
-    meta(name="viewport" content="width=device-width, initial-scale=1")
+    - var link = '/speisen/'
+    include ../includes/_meta.pug
     link(rel="stylesheet", href="../css/main.css")
-    script(type="text/javascript",src="http://fast.fonts.net/jsapi/3fa2210f-af24-4cd0-a9fe-a0f176f344e5.js")
   body#speisen
     include ../includes/_header.pug
     include ../includes/_nav.pug
@@ -20,13 +19,13 @@ html(lang="de-DE")
           li
             span.menu-item-name_inline Handkäs 
             br.mobile-lr
-            span.menu-item-desc_inline mit Musik, Brot und Butter
+            span.menu-item-desc_inline_normal-font mit Musik, Brot und Butter
             div.menu-item-price-list
               span.price 4,60 €
           li
             span.menu-item-name_inline Handkäs „Schoppen Hof“ 
             br.mobile-lr 
-            span.menu-item-desc_inline mit Musik, roten Zwiebeln, 
+            span.menu-item-desc_inline_normal-font mit Musik, roten Zwiebeln, 
               br.mobile-lr
               |Radieschen und Kresse
             div.menu-item-price-list
@@ -34,13 +33,13 @@ html(lang="de-DE")
           li
             span.menu-item-name_inline Hessischer Suppeneintopf 
             br.mobile-lr
-            span.menu-item-desc_inline mit feinen Tafelspitzwürfeln
+            span.menu-item-desc_inline_normal-font mit feinen Tafelspitzwürfeln
             div.menu-item-price-list
               span.price 5,80 €
           li
             span.menu-item-name_inline Frankfurter Würstchen 
             br.mobile-lr
-            span.menu-item-desc_inline mit Brot und Senf
+            span.menu-item-desc_inline_normal-font mit Brot und Senf
             div.menu-item-price-list
               span.price 5,20 €
           li
@@ -56,7 +55,7 @@ html(lang="de-DE")
           li
             span.menu-item-name_inline Grüne Soße 
             br.mobile-lr
-            span.menu-item-desc_inline mit Petersilienkartoffeln und 
+            span.menu-item-desc_inline_normal-font mit Petersilienkartoffeln und 
               br.mobile-lr
               |gekochten Bioeiern
             div.menu-item-price-list
@@ -64,7 +63,7 @@ html(lang="de-DE")
           li
             span.menu-item-name_inline Grobe Bratwurst 
             br.mobile-lr 
-            span.menu-item-desc_inline mit Sauerkraut und 
+            span.menu-item-desc_inline_normal-font mit Sauerkraut und 
               br.mobile-lr
               |Kartoffelpüree
             div.menu-item-price-list
@@ -72,7 +71,7 @@ html(lang="de-DE")
           li
             span.menu-item-name_inline Matjes hausgemacht 
             br.mobile-lr 
-            span.menu-item-desc_inline mit Äpfelchen, 
+            span.menu-item-desc_inline_normal-font mit Äpfelchen, 
               br.mobile-lr
               |roten Zwiebelringen 
               br.mobile-lr
@@ -80,12 +79,12 @@ html(lang="de-DE")
             div.menu-item-price-list
               span.price 8,60 €
           li
-            span.menu-item-name_inline Großer Sala eller 
+            span.menu-item-name_inline Großer Salatteller 
             br.mobile-lr
-            span.menu-item-desc_inline mit gebratenen Maultaschen und Röstzwiebeln
+            span.menu-item-desc_inline_normal-font mit gebratenen Maultaschen und Röstzwiebeln
             br 
             div.price-align-bottom
-              span.menu-item-desc_inline (auch mit vegetarischen 
+              span.menu-item-desc_inline_normal-font (auch mit vegetarischen 
                 br.mobile-lr
                 |Maultaschen erhältlich)
               div.menu-item-price-list
@@ -93,21 +92,21 @@ html(lang="de-DE")
           li
             span.menu-item-name_inline Schoppen Hofs Salatteller 
             br.mobile-lr
-            span.menu-item-desc_inline mit Handkäscarpaccio, Walnüssen 
+            span.menu-item-desc_inline_normal-font mit Handkäscarpaccio, Walnüssen 
               br.mobile-lr
               |und Apfelweinvinaigrette
             div.menu-item-price-list
               span.price 8,40 €
           li
-            span.menu-item-name_inline Großer Sala eller 
+            span.menu-item-name_inline Großer Salatteller 
             br.mobile-lr
-            span.menu-item-desc_inline mit Ziegenkäseröllchen
+            span.menu-item-desc_inline_normal-font mit Ziegenkäseröllchen
             div.menu-item-price-list
               span.price 8,80 €
           li
             span.menu-item-name_inline Käsespätzle 
             br.mobile-lr 
-            span.menu-item-desc_inline mit Röstzwiebeln 
+            span.menu-item-desc_inline_normal-font mit Röstzwiebeln 
               br.mobile-lr
               |und Salat
             div.menu-item-price-list
@@ -115,7 +114,7 @@ html(lang="de-DE")
           li
             span.menu-item-name_inline Saftig gekochtes Rippchen 
             br.mobile-lr 
-            span.menu-item-desc_inline auf Sauerkraut 
+            span.menu-item-desc_inline_normal-font auf Sauerkraut 
               br.mobile-lr
               |und hausgemachtem Kartoffelpüree
             div.menu-item-price-list
@@ -123,40 +122,40 @@ html(lang="de-DE")
           li
             span.menu-item-name_inline Schnitzel Wiener Art 
             br.mobile-lr
-            span.menu-item-desc_inline mit Pommes Frites und Salat
+            span.menu-item-desc_inline_normal-font mit Pommes Frites und Salat
             div.menu-item-price-list
               span.price 11,90 €
           li
             span.menu-item-name_inline Frankfurter Schnitzel 
             br.mobile-lr
-            span.menu-item-desc_inline mit Grüner Soße und Bratkartoffeln
+            span.menu-item-desc_inline_normal-font mit Grüner Soße und Bratkartoffeln
             div.menu-item-price-list
               span.price 12,80 €
           li
             span.menu-item-name_inline Kassler vom Schweinerücken 
             br.mobile-lr
-            span.menu-item-desc_inline an Thymianjus mit Bratkartoffeln 
+            span.menu-item-desc_inline_normal-font an Thymianjus mit Bratkartoffeln 
               br.mobile-lr
               |und Möhrengemüse
             div.menu-item-price-list
               span.price 12,80 €
           li
-            span.menu-item-name_inline Im Gemüsesud geso 
+            span.menu-item-name_inline Im Gemüsesud 
               br.mobile-lr
-              |ener Tafelspitz 
+              |gesottener Tafelspitz 
             br.mobile-lr
-            span.menu-item-desc_inline auf Meerre ichsauce 
+            span.menu-item-desc_inline_normal-font auf Meerrettichsauce 
               br.mobile-lr
               |mit Wirsinggemüse
             br 
             div.price-align-bottom
-              span.menu-item-desc_inline und Petersilienkartoffeln
+              span.menu-item-desc_inline_normal-font und Petersilienkartoffeln
               div.menu-item-price-list
                 span.price 14,20 €
           li
             span.menu-item-name_inline Rumpsteak 
             br.mobile-lr
-            span.menu-item-desc_inline mit Kräuterbutter 
+            span.menu-item-desc_inline_normal-font mit Kräuterbutter 
               br.mobile-lr
               |oder Rotweinzwiebeln, 
               br.mobile-lr

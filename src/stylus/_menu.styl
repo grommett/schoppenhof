@@ -29,7 +29,6 @@
   margin: 0 0 10px
   font-size: 14pt
   text-transform: uppercase
-  font-family: 'Beaulieu W01 Medium'
 
 .menu-category_small
   font-size: 10pt
@@ -58,19 +57,27 @@
   font-size: 9pt
 
 .menu-item-desc, 
-.menu-item-desc_inline, 
+.menu-item-desc_inline,
+.menu-item-desc_inline_normal-font, 
 .menu-item-desc_large-font
   display: block
   font-size: 9pt
   font-style: italic
 
-.menu-item-desc_inline
+.menu-item-desc_inline,
+.menu-item-desc_inline_normal-font
   display: inline
+
+.menu-item-desc_inline_normal-font
+  font-style: normal
+  font-size: 11pt
 
 .menu-item-desc_large-font
   font-size: 11.5pt
+
 .menu-price-desc-container
   position: relative
+
 .menu-item-food-desc
   font-size: 11.5pt
 
@@ -79,8 +86,10 @@
   top: 0
   right: 0
   font-size: 12pt
+
 .price-align-bottom
   position: relative
+
 .menu-key
   margin: 20px
   width: 100%
@@ -101,7 +110,6 @@
 
 .price
   font-weight: bold
-  font-family: 'Beaulieu W01 Medium'
   margin-left: 10px
 
 @media screen and (max-width: break-point)
