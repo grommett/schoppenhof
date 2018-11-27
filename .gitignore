@@ -2,3 +2,6 @@ node_modules
 build
 designs
 .DS_Store
+craft
+database
+.vscode
